@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="stylesheet" href="signup_styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="square" style="--i:0"></div>
+            <div class="square" style="--i:1"></div>
+            <div class="square" style="--i:2"></div>
+            <div class="square" style="--i:3"></div>
+            <div class="square" style="--i:4"></div>
+            <div class="container">
+                <div class="form">
+                    <h2>Signup Form</h2>
+                    <form>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" placeholder="email">
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" placeholder="Password">
+                            
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" placeholder="Confirm Password">
+                            
+                        </div>
+                        <div class="inputbox">
+                            <a href="conditions.html">signup</a> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/9.9.4/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCBTojBM6PNYpcC0vnSrYAMJU7oUfGiZLA",
+      authDomain: "litasfire-b2bdf.firebaseapp.com",
+      databaseURL: "https://litasfire-b2bdf-default-rtdb.firebaseio.com",
+      projectId: "litasfire-b2bdf",
+      storageBucket: "litasfire-b2bdf.appspot.com",
+      messagingSenderId: "701420746430",
+      appId: "1:701420746430:web:64f0ed3244a4a4dc5c10ef"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+  </script>
+</html>
